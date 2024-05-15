@@ -8,5 +8,6 @@
     <string name="about">About</string>
     <string name="clear_history">Clear History</string>
     <string name="show_history">Show History</string>
+    <string name="about_text">A quick fun number generator! Shoshana Szanzer, MCOO 255, Spring 2024.</string>
 
 </resources>

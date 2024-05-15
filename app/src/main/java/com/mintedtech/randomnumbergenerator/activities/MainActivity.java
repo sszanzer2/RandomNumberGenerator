@@ -144,9 +144,8 @@ public class MainActivity extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int itemId = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
         if (itemId == R.id.menu_show_history) {
-            showInfoDialog(MainActivity.this, "History", "Numbers Generated: " + mNumberHistory.toString());
+            Utils.showInfoDialog(MainActivity.this, "History", "Numbers Generated: " + mNumberHistory.toString());
             return true;
         } else if (itemId == R.id.menu_clear_history) {
             mNumberHistory.clear();
@@ -161,9 +160,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
     private void showAbout() {
-        showInfoDialog(MainActivity.this, "About Random Number Generator",
-                "A quick fun number generator!\n" +
-                        "\nSimply type in the range within which you want the number generated,\nand click play!");
+        String aboutText = getString(R.string.about_text);
+        Snackbar.make(findViewById(android.R.id.content), aboutText, Snackbar.LENGTH_LONG).show();
     }
-
 }
