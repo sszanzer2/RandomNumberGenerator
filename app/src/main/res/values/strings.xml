@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Random Number Generator</string>
+    <string name="action_settings">Settings</string>
+    <string name="please_enter_in_the_numbers">Please enter in the Numbers</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="_0">0</string>
+    <string name="about">About</string>
+    <string name="clear_history">Clear History</string>
+    <string name="show_history">Show History</string>
+
+</resources>
